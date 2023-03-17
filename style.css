@@ -1,0 +1,922 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.headline-1 {
+    margin: 50px 0 60px;
+}
+.headline-1 h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0px;
+}
+.headline-1 h2::after {
+    content: "";
+    display: block;
+    width: 9%;
+    height: 4px;
+    background-color: #ff4f60;
+    margin: 40px auto;
+}
+.header .top {
+    padding: 10px 0px;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+}
+.header .top .box {
+    display: flex;
+    justify-content: space-between;
+}
+.header .top p {
+    margin-bottom: 0;
+}
+.header .top .left {
+    display: flex;
+    color: #929292;
+}
+.header .top .left .logo img {
+    width: 100px;
+}
+.header .top .left .phone {
+    margin-right: 20px;
+}
+.header .top .right {
+    display: flex;
+    color: #929292;
+    font-weight: 600;
+}
+.header .top .right .social i {
+    margin-left: 15px;
+    transition: 0.5s;
+}
+.header .top .right .social i:hover {
+    color: red;
+}
+.header .top .right .login {
+    display: inline;
+    margin-left: 30px;
+    border-right: 1px solid #929292;
+    margin-right: 18px;
+    padding-right: 16px;
+}
+.header .bot {
+    background-image: url(img/Background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 15px;
+}
+.header .bot .left {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.header .bot .left .logo img {
+    width: 100px;
+}
+.header .bot .left .menu {
+    margin-left: auto;
+}
+.header .bot .left .menu > ul {
+    list-style: none;
+    display: flex;
+    margin-top: 6px;
+    position: relative;
+    margin-bottom: 0;
+}
+.header .bot .left .menu > ul > li > a {
+    display: flex;
+    color: #929292;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s;
+    position: relative;
+}
+.header .bot .left .menu > ul > li > a:hover {
+    color: #000;
+}
+.header .bot .left .menu > ul > li {
+    margin-right: 35px;
+}
+.header .bot .left .menu > ul > li > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(35, 183, 35);
+    border-radius: 50%;
+    z-index: 2;
+    top: 30px;
+    left: 30%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.header .bot .left .menu > ul > li > a:hover::after {
+    opacity: 1;
+    left: 50%;
+}
+.header .bot .left .menu > ul > li > ul {
+    list-style: none;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 34px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    position: absolute;
+    padding-left: 0;
+}
+.header .bot .left .menu > ul > li > ul > li > a {
+    text-decoration: none;
+    width: 200px;
+    display: flex;
+    font-size: 13px;
+    padding: 10px;
+    transition: 0.5s;
+    color: #929292;
+}
+.header .bot .left .menu > ul > li > ul > li:hover a {
+    background-color: #edededa7;
+    color: #000;
+}
+.header .bot .left .menu > ul > li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+.header .bot .now {
+    padding: 8px 18px;
+    border: 2.5px solid black;
+    background-color: transparent;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+.header .bot .content {
+    width: 50%;
+    margin-top: 100px;
+}
+.header .bot .content h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+.header .bot .content h1 .mia {
+    font-weight: 500;
+}
+.header .bot .content .dot {
+    color: #ff4f60;
+}
+.header .bot .content .from::before {
+    content: "";
+    width: 13%;
+    height: 2px;
+    background-color: #ff4f60;
+    margin-right: 40px;
+}
+.header .bot .content .from {
+    color: #ff4f60;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    margin: 30px 0;
+}
+.header .bot .content .search {
+    color: #929292;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+}
+.fast {
+    background-image: url(img/background2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.fast .thumb img {
+    border-radius: 20px;
+    width: 100%;
+}
+.fast .content {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.fast .thumb .content .out {
+    font-size: 18px;
+}
+.fast .thumb .content .the {
+    color: #838282;
+}
+.fast .thumb .content .readmore {
+    padding: 15px 24px;
+    color: #eee;
+    background-color: #000;
+    border: 1px solid transparent;
+    font-size: 13px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.fast .thumb .content .readmore:hover {
+    background-color: transparent;
+    color: #838282;
+    border: 1px solid #838282;
+}
+.choose {
+    background-image: url(img/background3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-position: -115px 175px;
+}
+.choose .banner {
+    position: relative;
+    background-image: url(img/banner/banner-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+.choose .banner img {
+    width: 100%;
+}
+.choose .banner .content {
+    text-align: center;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+.choose .banner .content .exclusive {
+    font-weight: 700;
+}
+.choose .banner .content .dot {
+    color: #ff4f60;
+}
+.choose .banner .content .book {
+    padding: 15px 29px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background-color: #ff4f60;
+    font-size: 12px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+.choose .banner .content .book:hover {
+    color: #ff4f60;
+    background-color: #fff;
+}
+.choose .text {
+    margin: 100px 0 30px;
+}
+.choose .text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0px;
+}
+.choose .text h2::after {
+    content: "";
+    display: block;
+    width: 9%;
+    height: 4px;
+    background-color: #ff4f60;
+    margin: 40px auto;
+}
+
+/* --------------room-------------- */
+.room .headline-1 {
+    margin-top: 0;
+}
+.room .card .thumb img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.room .card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.room .card .thumb {
+    position: relative;
+    border-radius: 20px;
+}
+.room .card .thumb .sale {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    background-color: #33c390;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 13px;
+    margin: 10px 17px;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.room .card .thumb .sale1 {
+    position: absolute;
+    top: 50px;
+    right: -40px;
+    background-color: #ff4f60;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 13px;
+    margin: 10px 17px;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.room .card .thumb:hover .sale1 {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+}
+.room .card .thumb:hover .sale {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+}
+.room .card .thumb .sale span {
+    font-weight: 600;
+    font-size: 17px;
+}
+.room .card .thumb .sale .one {
+    font-weight: 300;
+    font-size: 13px;
+    text-decoration-line: line-through;
+}
+.room .card .thumb .beach {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.room .card .content {
+    margin: 30px 0;
+    text-align: center;
+}
+.room .card .content .name {
+    font-size: 17px;
+}
+.room .card .content .star {
+    margin: 10px 0;
+}
+.room .card .content .star i {
+    color: #fcb900;
+    font-size: 13px;
+    padding-right: 3px;
+}
+.room .card .content .address {
+    color: #838282;
+    font-size: 13px;
+    font-weight: 300;
+}
+.room .card .content .location {
+    font-size: 14px;
+}
+.room .card .content .location span {
+    padding-right: 6px;
+}
+.room .card .content .check {
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 6px;
+    border: none;
+}
+
+.parent {
+    background-color: rgb(247, 247, 247);
+    margin: 50px 0;
+}
+.parent .child {
+    text-align: center;
+    margin: 30px;
+}
+.parent .child img {
+    width: 18%;
+    height: 55px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.parent .child .find {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.parent .child .we {
+    color: #838282;
+    font-size: 15px;
+    font-weight: 300;
+}
+.popular .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.popular .title .left::after {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 4px;
+    background-color: #ff4f60;
+    margin-top: 20px;
+}
+.popular .title .right .view {
+    padding: 15px 25px;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    background-color: #ff4f60;
+    font-size: 13px;
+}
+.popular .card {
+    border-radius: 10px;
+}
+.popular .card .thumb img {
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+.popular .card .thumb .beach {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.popular .card .content {
+    margin: 30px 0;
+    text-align: center;
+}
+.popular .card .content .name {
+    font-size: 17px;
+}
+.popular .card .content .star {
+    margin: 10px 0;
+}
+.popular .card .content .star i {
+    color: #fcb900;
+    font-size: 13px;
+    padding-right: 3px;
+}
+.popular .card .content .address {
+    color: #838282;
+    font-size: 13px;
+    font-weight: 300;
+}
+.popular .card .content .location {
+    font-size: 14px;
+}
+.popular .card .content .location span {
+    padding-right: 6px;
+}
+.popular .card .content .check {
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 6px;
+    border: none;
+}
+.popular .form {
+    border: 1px solid rgb(200, 200, 200);
+    text-align: center;
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 30px 15px 15px;
+}
+.popular .form .find {
+    font-size: 16px;
+}
+.popular .form .search {
+    font-size: 14px;
+    color: #5d5d5d;
+    margin-bottom: 10px;
+}
+.popular .form input {
+    margin: 10px -20px;
+    padding: 16px 18px;
+    width: 88%;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 6px;
+    border: 1px solid #d1d1d1;
+}
+.popular .form .room {
+    padding: 15px 20px;
+    width: 88%;
+    margin: 15px;
+    border-radius: 6px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+.feedback {
+    margin-top: 120px;
+}
+.feedback .avatar {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 60px 17px 30px;
+}
+.feedback .images {
+    width: 14%;
+    margin: 0 auto;
+}
+.feedback .images img {
+    border-radius: 50%;
+}
+.feedback .nameavatar {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+}
+.feedback .fan {
+    text-align: center;
+    font-size: 14px;
+    color: #929292;
+    font-weight: 300;
+}
+.firstorder {
+    position: relative;
+    margin-top: 100px;
+    background-image: url(img/pic.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+.firstorder .content {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+.firstorder .content .get {
+    font-size: 50px;
+}
+.firstorder .content .one {
+    font-weight: 700;
+}
+.firstorder .content .two {
+    color: #ff4f60;
+}
+.firstorder .content input {
+    padding: 15px;
+    width: 30%;
+    font-size: 14px;
+    font-weight: 300;
+    color: #838282;
+    border: none;
+    margin-right: 5px;
+}
+.firstorder .content button {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #838282;
+    border: none;
+    color: #fff;
+    background-color: #ff4f60;
+}
+.threepicture {
+    margin-top: 100px;
+}
+.threepicture img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.threepicture .card {
+    border-radius: 20px;
+    border-radius: 20px;
+}
+.threepicture .card .content {
+    text-align: center;
+    padding: 30px 30px 25px;
+}
+.threepicture .card .content .tip {
+    font-size: 17px;
+}
+.threepicture .card .content .text {
+    font-size: 14px;
+    color: #5d5d5d;
+    font-weight: 300;
+    margin: 20px;
+}
+.threepicture .card .content .read {
+    padding: 15px 30px;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    transition: 0.5s;
+}
+.threepicture .card .content .read:hover {
+    background-color: #838282;
+}
+.partner {
+    margin: 50px 0;
+}
+.visit .logo {
+    margin: 80px 0;
+}
+.visit {
+    position: relative;
+    background-image: url(img/pic2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+.visit .content {
+    text-align: center;
+    color: #fff;
+}
+.visit .content .get {
+    font-size: 50px;
+}
+.visit .content .one {
+    font-weight: 700;
+}
+.visit .content .two {
+    color: #ff4f60;
+}
+.visit .content button {
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #838282;
+    border: none;
+    color: #fff;
+    background-color: #ff4f60;
+    border-radius: 4px;
+}
+.footer {
+    background-color: #f7f7f7;
+    margin-top: 70px;
+}
+.footer .footer1 {
+    padding: 50px 0;
+}
+.footer .footer1 img {
+    width: 30%;
+    margin-bottom: 40px;
+}
+.footer .footer1 .social i {
+    background-color: #ff4f60;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-bottom: 22px;
+}
+.footer .footer1 .our {
+    font-size: 14px;
+    font-weight: 300;
+    color: #838282;
+    margin-bottom: 27px;
+}
+.footer .footer1 .usd {
+    font-size: 14px;
+    padding: 6px 20px;
+    border: none;
+}
+.footer .footer1 .quick {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.footer .footer1 ul {
+    list-style: none;
+}
+.footer .footer1 ul li {
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+.footer .footer1 ul li a {
+    color: #838282;
+    font-weight: 300;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.footer .footer1 ul li:hover a {
+    color: #ff4f60;
+}
+.footer .footer1 .top {
+    margin-bottom: 30px;
+}
+.footer .footer1 .top .input {
+    position: relative;
+}
+.footer .footer1 .top .input input {
+    padding: 15px;
+    width: 100%;
+
+    font-size: 13px;
+    color: #838282;
+    border: none;
+    font-weight: 300;
+}
+.footer .footer1 .top .icon {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    color: #ff4f60;
+}
+.footer .footer1 .bot img {
+    width: 100%;
+}
+.footer .copy {
+    text-align: center;
+    font-size: 13px;
+    transform: translateY(-40px);
+    color: #838282;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.footer .copy span {
+    color: #ff4f60;
+}
+@media (min-width: 992px) {
+    .header .bot .box .icon-menu {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .header .bot .box .left .menu {
+        display: none;
+    }
+    .header .bot .box .left .logo {
+        margin-right: auto;
+    }
+    .header .bot .box .icon-menu {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .offcanvas .offcanvas-body ul li {
+        list-style: none;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    .offcanvas .offcanvas-body ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    .header .bot {
+        height: auto;
+    }
+    .popular .title {
+        flex-direction: column;
+    }
+    .popular .title .right .view {
+        padding: 12px 20px;
+        margin-top: 32px;
+    }
+    .popular .form {
+        margin-top: 20px;
+    }
+    .headline-1 {
+        margin: 30px 0 34px;
+    }
+    .feedback {
+        margin-top: 30px;
+    }
+    .headline-1 h2::after {
+        margin: 20px auto;
+    }
+    .threepicture {
+        margin-top: 50px;
+    }
+    .threepicture .card .content {
+        padding: 10px;
+    }
+    .threepicture .card .content .read {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    .partner img {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .hide-moble {
+        display: none;
+    }
+    .feedback .avatar {
+        margin-top: 20px;
+        padding: 30px 14px 22px;
+    }
+    .firstorder .content input {
+        padding: 8px;
+        width: 50%;
+    }
+    .firstorder .content button {
+        padding: 8px;
+    }
+    .firstorder .content .get {
+        font-size: 35px;
+    }
+    .visit .content .get {
+        font-size: 30px;
+    }
+    .footer .footer1 {
+        padding: 30px 0 15px;
+    }
+    .footer .footer1 ul {
+        padding-left: 0;
+    }
+    .footer .footer1 .top .icon {
+        right: 10px;
+    }
+    .footer .footer1 .quick {
+        margin-left: 0;
+    }
+}
+@media (max-width: 575px) {
+    .header .top .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .bot .now {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    .header .bot .content {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .header .bot .content h1 {
+        font-size: 40px;
+    }
+    .header .bot .content .from {
+        justify-content: center;
+    }
+    .headline-1 {
+        margin: 30px 0 38px;
+    }
+    .fast {
+        margin-top: 50px;
+    }
+    .choose {
+        padding: 50px 0;
+    }
+    .fast .thumb .content .readmore {
+        padding: 8px 13px;
+        font-size: 10px;
+    }
+    .headline-1 h2 {
+        font-size: 25px;
+    }
+    .headline-1 h2::after {
+        margin: 30px auto;
+    }
+    .choose .banner .content {
+        width: 80%;
+    }
+    .room .card .thumb .beach {
+        width: 90%;
+        text-align: center;
+    }
+    .room .card .content .check {
+        padding: 5px 12px;
+        font-size: 11px;
+    }
+    .room .card .content {
+        padding: 10px 10px 0;
+        margin: 30px 0 15px;
+    }
+    .popular .card .thumb .beach {
+        top: 10px;
+        left: 10px;
+        transform: unset;
+    }
+    .firstorder {
+        margin-top: 50px;
+    }
+    .threepicture .card .content .text {
+        margin: 0 0 15px;
+    }
+}
